@@ -3,4 +3,4 @@
 ## Search filters
 | Filter          | Description                                        | Example                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
-| test    | test  | test |||
+| site    | Identify subdomains that do not include www  | site:google.com -site:www.google.com |||

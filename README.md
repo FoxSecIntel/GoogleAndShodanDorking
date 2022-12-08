@@ -9,3 +9,4 @@ Google dorking, also known as Google hacking, is the practice of using advanced 
 | filetype| Search for any kind of file extensions | filetype: pdf |||
 | intitle/inurl | Search for open FTP servers | intitle:"index of" inurl:ftp |||
 |intitle | Search for WP Admin Login pages | intitle:"Index of" wp-admin |||
+|inurl | This query searches for pages that contain the word "login" in the URL | inurl:login |||

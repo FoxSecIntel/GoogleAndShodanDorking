@@ -22,3 +22,4 @@ Some examples of Google dorking queries i use to find interesting stuff are show
 ||Finding email addresses linked to an email address | fred.smith*.com|||
 |site|Find information through social media | site:twitter.com bbc|||
 |site|Search s3 buckets for confidential files | site:s3.amazonaws.com confidential companyname|||
+|ip|Find results based on an IP address| ip:8.8.8.8|||

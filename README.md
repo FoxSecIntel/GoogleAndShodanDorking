@@ -16,3 +16,4 @@ Some examples of Google dorking queries i use to find interesting stuff are show
 |related | This query searches for pages that are related to the specified URL. | related:www.bbc.co.uk|||
 | | This query searches for files types .xls and the word emails in the url | filetype:xls inurl:"email.xls"|||
 | intitle | Find those default Apache2 webapages | intitle:"Apache2 Ubuntu Default Page: It works"|||
+| site | Find those important people on linkedin by company |site:linkedin.com bbc chief|

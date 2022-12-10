@@ -4,7 +4,15 @@ Google dorking, also known as Google hacking, is the practice of using advanced 
 
 Below are some examples of Google dorking queries that I use to discover interesting things:
 
-## Search filters
+## Search filters - site
+| Filter          | Description                                        | Example                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+| site    | Identify subdomains that do not include www  | site:google.com -site:www.google.com |||
+| site | Find those important people on linkedin by company |site:linkedin.com bbc chief|
+|site|Find information through social media | site:twitter.com bbc|||
+|site|Search s3 buckets for confidential files | site:s3.amazonaws.com confidential companyname|||
+
+## Search filters - all
 | Filter          | Description                                        | Example                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
 | site    | Identify subdomains that do not include www  | site:google.com -site:www.google.com |||

@@ -20,7 +20,7 @@ Below are some examples of Google dorking queries that I use to discover interes
 | intitle | Find those default Apache2 webapages | intitle:"Apache2 Ubuntu Default Page: It works"|||
 | intitle | Find those default Windows webpages per url | intitle:"IIS Windows Server" inurl:example.com|||
 
-## Search filters - all
+## Search filters - others
 | Filter          | Description                                        | Example                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
 | filetype| Search for any kind of file extensions | filetype: pdf |||

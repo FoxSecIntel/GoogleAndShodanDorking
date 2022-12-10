@@ -1,6 +1,8 @@
 # Google dork cheatsheet
 
-Google dorking, also known as Google hacking, is the practice of using advanced search operators and specialized queries to search for information that is not easily accessible through regular search engines. Some examples of Google dorking queries include the following:
+Google dorking, also known as Google hacking, is the practice of using advanced search operators and specialized queries to search for information that is not easily accessible through regular search engines. 
+
+Some examples of Google dorking queries i use to find interesting stuff are shown below:
 
 ## Search filters
 | Filter          | Description                                        | Example                              |

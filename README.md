@@ -19,3 +19,4 @@ Some examples of Google dorking queries i use to find interesting stuff are show
 | intitle | Find those default Windows webpages per url | intitle:"IIS Windows Server" inurl:example.com|||
 | site | Find those important people on linkedin by company |site:linkedin.com bbc chief|
 |map | Forces Google to provide a map of the location | map:london|||
+||Finding email addresses linked to an email address | fred.smith*.com|||

@@ -9,6 +9,7 @@ Below are some examples of Google dorking queries that I use to discover interes
 | :-------------- |:---------------------------------------------------| :------------------------------------|
 | site    | Identify subdomains that do not include www  | site:google.com -site:www.google.com |||
 | site | Find those important people on linkedin by company |site:linkedin.com bbc chief|
+| site | Search linkedin for people who work in a certain location | site:linkedin.com intext:location|||
 |site|Find information through social media | site:twitter.com bbc|||
 |site|Search s3 buckets for confidential files | site:s3.amazonaws.com confidential companyname|||
 

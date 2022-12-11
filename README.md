@@ -20,11 +20,17 @@ Below are some examples of Google dorking queries that I use to discover interes
 | intitle | Find those default Apache2 webapages | intitle:"Apache2 Ubuntu Default Page: It works"|||
 | intitle | Find those default Windows webpages per url | intitle:"IIS Windows Server" inurl:example.com|||
 
+## Search filters - inurl
+| Filter          | Description                                        | Example                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+| inurl | Find F5 Big IP Login Pages  | inurl:/tmui/login.jsp |||
+|inurl | This query searches for pages that contain the word "login" in the URL | inurl:login |||
+
+
 ## Search filters - others
 | Filter          | Description                                        | Example                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
 | filetype| Search for any kind of file extensions | filetype: pdf |||
-|inurl | This query searches for pages that contain the word "login" in the URL | inurl:login |||
 |intext | This query searches for pages that contain the word password in the text of the page | intext:password |||
 |related | This query searches for pages that are related to the specified URL. | related:www.bbc.co.uk|||
 | | This query searches for files types .xls and the word emails in the url | filetype:xls inurl:"email.xls"|||

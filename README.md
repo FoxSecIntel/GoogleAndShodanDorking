@@ -26,6 +26,7 @@ Below are some examples of Google dorking queries that I use to discover interes
 | :-------------- |:---------------------------------------------------| :------------------------------------|
 | inurl | Find F5 Big IP Login Pages  | inurl:/tmui/login.jsp |||
 |inurl | This query searches for pages that contain the word "login" in the URL | inurl:login |||
+|inurl | Looking for services running on port 8443 | inurl:8443 -intext:8443|||
 
 
 ## Search filters - others

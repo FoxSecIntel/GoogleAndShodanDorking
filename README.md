@@ -2,7 +2,7 @@
 
 Google dorking, also known as Google hacking, is the practice of using advanced search operators and specialized queries to search for information that is not easily accessible through regular search engines. 
 
-Below are some examples of Google dorking queries that I use to discover interesting things:
+Below are some examples of Google dorking queries that I use to discover interesting new things:
 
 ## Search filters - site
 | Filter          | Description                                        | Example                              |

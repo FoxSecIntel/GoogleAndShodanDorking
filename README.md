@@ -28,6 +28,13 @@ Below are some examples of Google dorking queries that I use to discover interes
 |inurl | This query searches for pages that contain the word "login" in the URL | inurl:login |||
 |inurl | Looking for services running on port 8443 | inurl:8443 -intext:8443|||
 
+## Search filters - intext
+| Filter          | Description                                        | Example                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+| intext    | Search for open directories  | intext:"index of" "parent directory" |||
+|intext | This query searches for pages that contain the word password in the text of the page | intext:password |||
+
+
 
 ## Search filters - others
 | Filter          | Description                                        | Example                              |

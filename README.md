@@ -44,5 +44,6 @@ Below are some examples of Google dorking queries that I use to discover interes
 |related | This query searches for pages that are related to the specified URL. | related:www.bbc.co.uk|||
 | | This query searches for files types .xls and the word emails in the url | filetype:xls inurl:"email.xls"|||
 |map | Forces Google to provide a map of the location | map:london|||
+|stock | Finds stock related information | stock:goog|||
 ||Finding email addresses linked to an email address | fred.smith*.com|||
 |ip|Find results based on an IP address| ip:8.8.8.8|||

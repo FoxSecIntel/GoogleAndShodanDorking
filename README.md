@@ -1,4 +1,4 @@
-# Google dork cheatsheet
+# Mastering Google Dorks: A Comprehensive Cheatsheet
 
 Google dorking, also known as Google hacking, is the practice of using advanced search operators and specialized queries to search for information that is not easily accessible through regular search engines. 
 

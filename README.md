@@ -12,6 +12,7 @@ Below are some examples of Google dorking queries that I use to discover interes
 | site | Search linkedin for people who work in a certain location | site:linkedin.com intext:location|||
 |site|Find information through social media | site:twitter.com bbc|||
 |site|Search s3 buckets for confidential files | site:s3.amazonaws.com confidential companyname|||
+|site| Search for documents on onedrive | site:onedrive.live.com |||
 
 ## Search filters - intitle
 | Filter          | Description                                        | Example                              |

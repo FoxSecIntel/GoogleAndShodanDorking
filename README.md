@@ -13,6 +13,8 @@ Below are some examples of Google dorking queries that I use to discover interes
 |site|Find information through social media | site:twitter.com bbc|||
 |site|Search s3 buckets for confidential files | site:s3.amazonaws.com confidential companyname|||
 |site| Search for documents on onedrive | site:onedrive.live.com |||
+|site| Search for pages on government websites containing the word "data" |site:gov inurl:data|||
+|site | Search for pages containing the word "admin" on a specific website | site:example.com inurl:admin |||
 
 ## Search filters - intitle
 | Filter          | Description                                        | Example                              |
@@ -42,6 +44,7 @@ Below are some examples of Google dorking queries that I use to discover interes
 | :-------------- |:---------------------------------------------------| :------------------------------------|
 | filetype| Search for any kind of file extensions | filetype: pdf |||
 |intext | This query searches for pages that contain the word password in the text of the page | intext:password |||
+|intext | Search for pages containing email addresses from a specific domain | intext:"@domainname.com"|||
 |related | This query searches for pages that are related to the specified URL. | related:www.bbc.co.uk|||
 | | This query searches for files types .xls and the word emails in the url | filetype:xls inurl:"email.xls"|||
 |map | Forces Google to provide a map of the location | map:london|||

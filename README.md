@@ -5,7 +5,7 @@ Shodan dorking, also referred to as Shodan querying, involves employing advanced
 Here are a few instances of Shodan querying queries I employ to uncover intriguing discoveries:
 
 ## Search Filters
-| Description                                        | Example                              |
+| Description                                        | Query                              |
 | :---------------------------------------------------| :------------------------------------|
 | Cisco Smart Install  |"smart install client active" ||
 | Citrix Gateway  |title:"citrix gateway"<BR>html:"/citrix/xenapp"||

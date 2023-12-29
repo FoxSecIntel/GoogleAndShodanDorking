@@ -1,3 +1,17 @@
+# Mastering Shodan Dorks: A Comprehensive Cheatsheet
+
+Shodan dorking, also referred to as Shodan querying, involves employing advanced search operators and specialized queries to unearth data that isn't readily obtainable via conventional search engines.
+
+Here are a few instances of Shodan querying queries I employ to uncover intriguing discoveries:
+
+## Search Filters
+| Description                                        | Example                              |
+| :---------------------------------------------------| :------------------------------------|
+| Cisco Smart Install  |"smart install client active" ||
+| Citrix Gateway  |title:"citrix gateway" ||
+| Windows RDP  |"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00" ||
+
+
 # Mastering Google Dorks: A Comprehensive Cheatsheet
 
 Google dorking, also known as Google hacking, is the practice of using advanced search operators and specialized queries to search for information that is not easily accessible through regular search engines. 

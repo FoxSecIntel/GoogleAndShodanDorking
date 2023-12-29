@@ -16,6 +16,7 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 | Autonomous System Number (ASN) | asn:ASxxxx  ||
 | MoveIT |  "SSH-2.0-MOVEit" ||
 | Atlassian |   html:"atlassian-connect.json"<BR>"http.component:"Atlassian Confluence"<BR>http.component:"Atlassian Jira" ||
+| SAP |   html:"SAP NetWeaver" ||
 
 
 

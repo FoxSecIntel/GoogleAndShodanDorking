@@ -14,6 +14,7 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 | BMC Remedy  |  http.html:"BMC Remedy" ||
 | Orgainisaiton | org:microsoft ||
 | Autonomous System Number (ASN) | asn:ASxxxx  ||
+| MoveIT |  "SSH-2.0-MOVEit" ||
 
 
 

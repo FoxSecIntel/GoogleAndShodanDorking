@@ -8,7 +8,7 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 | Description                                        | Example                              |
 | :---------------------------------------------------| :------------------------------------|
 | Cisco Smart Install  |"smart install client active" ||
-| Citrix Gateway  |title:"citrix gateway" ||
+| Citrix Gateway  |title:"citrix gateway"<BR>html:"/citrix/xenapp"||
 | Windows RDP  |"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00" ||
 | Apache OFBiz  | "OFBiz.Visitor="<BR>  http.html:"Apache OFBiz" ||
 | BMC Remedy  |  http.html:"BMC Remedy" ||

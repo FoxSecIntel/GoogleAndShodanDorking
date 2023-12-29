@@ -11,6 +11,8 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 | Citrix Gateway  |title:"citrix gateway" ||
 | Windows RDP  |"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00" ||
 | Apache OFBiz  | "OFBiz.Visitor=" or  http.html:"Apache OFBiz" ||
+| BMC Remedy  |  http.html:"BMC Remedy" ||
+
 
 
 # Mastering Google Dorks: A Comprehensive Cheatsheet

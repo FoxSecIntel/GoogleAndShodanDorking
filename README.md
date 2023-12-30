@@ -18,6 +18,7 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 | Atlassian |   html:"atlassian-connect.json"<BR>"http.component:"Atlassian Confluence"<BR>http.component:"Atlassian Jira" ||
 | SAP |   html:"SAP NetWeaver" ||
 | BitBucket |   http.component:"BitBucket"<BR>  title:"Log in - Bitbucket" ||
+| CobaltStrike Servers | product:"cobalt strike team server"<BR>  product:"Cobalt Strike Beacon" ||
 
 
 

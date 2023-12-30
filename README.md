@@ -19,6 +19,7 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 | SAP |   html:"SAP NetWeaver" ||
 | BitBucket |   http.component:"BitBucket"<BR>  title:"Log in - Bitbucket" ||
 | CobaltStrike Servers | product:"cobalt strike team server"<BR>  product:"Cobalt Strike Beacon" ||
+| find all server/host with same common name | ssl.cert.subject.cn:"oracle.com" ||
 
 
 

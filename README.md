@@ -7,8 +7,11 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 ## Search Filters
 | Description                                        | Query                              |
 | :---------------------------------------------------| :------------------------------------|
+| Autonomous System Number (ASN) | asn:ASxxxx  ||
+| Atlassian |   html:"atlassian-connect.json"<BR>"http.component:"Atlassian Confluence"<BR>http.component:"Atlassian Jira" ||
 | Cisco Smart Install  |"smart install client active" ||
 | Citrix Gateway  |title:"citrix gateway"<BR>html:"/citrix/xenapp"||
+| Global Protect  |http.html:"Global Protect"||
 | Windows RDP  |"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00" ||
 | Apache OFBiz  | "OFBiz.Visitor="<BR>  http.html:"Apache OFBiz" ||
 | BMC Remedy  |  http.html:"BMC Remedy" ||

@@ -7,22 +7,20 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 ## Search Filters
 | Description                                        | Query                              |
 | :---------------------------------------------------| :------------------------------------|
+| Apache OFBiz  | "OFBiz.Visitor="<BR>  http.html:"Apache OFBiz" ||
 | Autonomous System Number (ASN) | asn:ASxxxx  ||
 | Atlassian |   html:"atlassian-connect.json"<BR>"http.component:"Atlassian Confluence"<BR>http.component:"Atlassian Jira" ||
+| BitBucket |   http.component:"BitBucket"<BR>  title:"Log in - Bitbucket" ||
+| BMC Remedy  |  http.html:"BMC Remedy" ||
+| CobaltStrike Servers | product:"cobalt strike team server"<BR>  product:"Cobalt Strike Beacon" ||
+| find all server/host with same common name | ssl.cert.subject.cn:"oracle.com" ||
 | Cisco Smart Install  |"smart install client active" ||
 | Citrix Gateway  |title:"citrix gateway"<BR>html:"/citrix/xenapp"||
 | Global Protect  |http.html:"Global Protect"||
-| Windows RDP  |"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00" ||
-| Apache OFBiz  | "OFBiz.Visitor="<BR>  http.html:"Apache OFBiz" ||
-| BMC Remedy  |  http.html:"BMC Remedy" ||
 | Orgainisaiton | org:microsoft ||
-| Autonomous System Number (ASN) | asn:ASxxxx  ||
 | MoveIT |  "SSH-2.0-MOVEit" ||
-| Atlassian |   html:"atlassian-connect.json"<BR>"http.component:"Atlassian Confluence"<BR>http.component:"Atlassian Jira" ||
 | SAP |   html:"SAP NetWeaver" ||
-| BitBucket |   http.component:"BitBucket"<BR>  title:"Log in - Bitbucket" ||
-| CobaltStrike Servers | product:"cobalt strike team server"<BR>  product:"Cobalt Strike Beacon" ||
-| find all server/host with same common name | ssl.cert.subject.cn:"oracle.com" ||
+| Windows RDP  |"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00" ||
 
 
 

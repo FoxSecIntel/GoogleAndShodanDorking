@@ -23,6 +23,7 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 | Bomgar | "Server: Bomgar" "200 OK"||
 | MoveIT |  "SSH-2.0-MOVEit" ||
 | SAP |   html:"SAP NetWeaver" ||
+| clear text | not ssl ||
 | Windows RDP  |"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00" ||
 
 

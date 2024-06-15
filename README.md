@@ -20,6 +20,7 @@ Here are a few instances of Shodan querying queries I employ to uncover intrigui
 | Orgainisaiton | org:microsoft ||
 | Juniper Router  |http.title:"Log In - Juniper Web Device Manager"||
 | Pulse Secure  | product:"Pulse Secure" ||
+| Bomgar | "Server: Bomgar" "200 OK"||
 | MoveIT |  "SSH-2.0-MOVEit" ||
 | SAP |   html:"SAP NetWeaver" ||
 | Windows RDP  |"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00" ||

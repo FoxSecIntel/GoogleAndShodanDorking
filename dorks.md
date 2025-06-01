@@ -1,83 +1,109 @@
-# Mastering Shodan Dorks: A Comprehensive Cheatsheet
+# 🕵️ Mastering Shodan Dorks: A Comprehensive Cheatsheet
 
-Shodan dorking, also referred to as Shodan querying, involves employing advanced search operators and specialized queries to unearth data that isn't readily obtainable via conventional search engines.
+Shodan dorking (a.k.a. Shodan querying) involves using advanced search operators to discover internet-connected assets, services, and vulnerabilities that are otherwise hidden from traditional search engines.
 
-Here are a few instances of Shodan querying queries I employ to uncover intriguing discoveries:
+Here are queries I use to uncover interesting data.
 
-## Search Filters
-| Description                                        | Query                              |
-| :---------------------------------------------------| :--------------------------------------------------------------|
-| Apache OFBiz  | "OFBiz.Visitor="<BR>  http.html:"Apache OFBiz" ||
-| Autonomous System Number (ASN) | asn:ASxxxx  ||
-| Atlassian |   html:"atlassian-connect.json"<BR>"http.component:"Atlassian Confluence"<BR>http.component:"Atlassian Jira" ||
-| BitBucket |   http.component:"BitBucket"<BR>  title:"Log in - Bitbucket" ||
-| BMC Remedy  |  http.html:"BMC Remedy" ||
-| CobaltStrike Servers | product:"cobalt strike team server"<BR>  product:"Cobalt Strike Beacon" ||
-| find all server/host with same common name | ssl.cert.subject.cn:"oracle.com" ||
-| Cisco Smart Install  |"smart install client active" ||
-| Citrix Gateway  |title:"citrix gateway"<BR>html:"/citrix/xenapp"||
-| Global Protect  |http.html:"Global Protect"||
-| Orgainisaiton | org:microsoft ||
-| Juniper Router  |http.title:"Log In - Juniper Web Device Manager"||
-| Pulse Secure  | product:"Pulse Secure" ||
-| Bomgar | "Server: Bomgar" "200 OK"||
-| MoveIT |  "SSH-2.0-MOVEit" ||
-| SAP |   html:"SAP NetWeaver" ||
-| clear text | not ssl ||
-| Windows RDP  |"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00" ||
+---
 
+## 🌐 Shodan Search Filters
 
+| Description | Query |
+|------------|-------|
+| Apache OFBiz | `http.html:"Apache OFBiz"` |
+| ASN (Autonomous System Number) | `asn:ASxxxx` |
+| Atlassian | `html:"atlassian-connect.json"`<br>`http.component:"Atlassian Confluence"`<br>`http.component:"Atlassian Jira"` |
+| BitBucket | `http.component:"BitBucket"`<br>`title:"Log in - Bitbucket"` |
+| BMC Remedy | `http.html:"BMC Remedy"` |
+| CobaltStrike Servers | `product:"cobalt strike team server"`<br>`product:"Cobalt Strike Beacon"` |
+| Common Name SSL match | `ssl.cert.subject.cn:"oracle.com"` |
+| Cisco Smart Install | `"smart install client active"` |
+| Citrix Gateway | `title:"citrix gateway"`<br>`html:"/citrix/xenapp"` |
+| GlobalProtect | `http.html:"Global Protect"` |
+| Organisation | `org:microsoft` |
+| Juniper Router | `http.title:"Log In - Juniper Web Device Manager"` |
+| Pulse Secure | `product:"Pulse Secure"` |
+| Bomgar | `"Server: Bomgar" "200 OK"` |
+| MoveIT | `"SSH-2.0-MOVEit"` |
+| SAP | `html:"SAP NetWeaver"` |
+| Cleartext | `not ssl` |
+| Windows RDP | `"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00"` |
 
-# Mastering Google Dorks: A Comprehensive Cheatsheet
+---
 
-Google dorking, also known as Google hacking, is the practice of using advanced search operators and specialized queries to search for information that is not easily accessible through regular search engines. 
+# 🔍 Mastering Google Dorks: A Comprehensive Cheatsheet
 
-Below are some examples of Google dorking queries that I use to discover interesting new things:
+Google dorking (a.k.a. Google hacking) uses advanced search operators to extract hard-to-find information from indexed content. These queries are particularly useful for OSINT, red teaming, and recon tasks.
 
-## Search filters - site
-| Filter          | Description                                        | Example                              |
-| :-------------- |:---------------------------------------------------| :------------------------------------|
-| site    | Identify subdomains that do not include www  | site:google.com -site:www.google.com |||
-| site | Find those important people on linkedin by company |site:linkedin.com bbc chief|
-| site | Search linkedin for people who work in a certain location | site:linkedin.com intext:location|||
-|site|Find information through social media | site:twitter.com bbc|||
-|site|Search s3 buckets for confidential files | site:s3.amazonaws.com confidential companyname|||
-|site| Search for documents on onedrive | site:onedrive.live.com |||
-|site| Search for pages on government websites containing the word "data" |site:gov inurl:data|||
-|site | Search for pages containing the word "admin" on a specific website | site:example.com inurl:admin |||
+---
 
-## Search filters - intitle
-| Filter          | Description                                        | Example                              |
-| :-------------- |:---------------------------------------------------| :------------------------------------|
-| intitle/inurl | Search for open FTP servers | intitle:"index of" inurl:ftp |||
-|intitle | Search for WP Admin Login pages | intitle:"Index of" wp-admin |||
-| intitle | Find those default Apache2 webapages | intitle:"Apache2 Ubuntu Default Page: It works"|||
-| intitle | Find those default Windows webpages per url | intitle:"IIS Windows Server" inurl:example.com|||
+## 🌍 Search Filters – `site`
 
-## Search filters - inurl
-| Filter          | Description                                        | Example                              |
-| :-------------- |:---------------------------------------------------| :------------------------------------|
-| inurl | Find F5 Big IP Login Pages  | inurl:/tmui/login.jsp |||
-|inurl | This query searches for pages that contain the word "login" in the URL | inurl:login |||
-|inurl | Looking for services running on port 8443 | inurl:8443 -intext:8443|||
+| Filter | Description | Example |
+|--------|-------------|---------|
+| `site` | Identify subdomains not including www | `site:google.com -site:www.google.com` |
+| `site` | Find important people on LinkedIn by company | `site:linkedin.com bbc chief` |
+| `site` | Find LinkedIn users by location | `site:linkedin.com intext:location` |
+| `site` | Search Twitter | `site:twitter.com bbc` |
+| `site` | S3 buckets for confidential data | `site:s3.amazonaws.com confidential companyname` |
+| `site` | Documents on OneDrive | `site:onedrive.live.com` |
+| `site` | Government data pages | `site:gov inurl:data` |
+| `site` | Admin pages on a specific site | `site:example.com inurl:admin` |
 
-## Search filters - intext
-| Filter          | Description                                        | Example                              |
-| :-------------- |:---------------------------------------------------| :------------------------------------|
-| intext    | Search for open directories  | intext:"index of" "parent directory" |||
-|intext | This query searches for pages that contain the word password in the text of the page | intext:password |||
+---
 
+## 📄 Search Filters – `intitle`
 
+| Filter | Description | Example |
+|--------|-------------|---------|
+| `intitle` / `inurl` | Find open FTP servers | `intitle:"index of" inurl:ftp` |
+| `intitle` | WordPress admin login | `intitle:"Index of" wp-admin` |
+| `intitle` | Default Apache2 pages | `intitle:"Apache2 Ubuntu Default Page: It works"` |
+| `intitle` | IIS default pages | `intitle:"IIS Windows Server" inurl:example.com` |
 
-## Search filters - others
-| Filter          | Description                                        | Example                              |
-| :-------------- |:---------------------------------------------------| :------------------------------------|
-| filetype| Search for any kind of file extensions | filetype: pdf |||
-|intext | This query searches for pages that contain the word password in the text of the page | intext:password |||
-|intext | Search for pages containing email addresses from a specific domain | intext:"@domainname.com"|||
-|related | This query searches for pages that are related to the specified URL. | related:www.bbc.co.uk|||
-| | This query searches for files types .xls and the word emails in the url | filetype:xls inurl:"email.xls"|||
-|map | Forces Google to provide a map of the location | map:london|||
-|stock | Finds stock related information | stock:goog|||
-||Finding email addresses linked to an email address | fred.smith*.com|||
-|ip|Find results based on an IP address| ip:8.8.8.8|||
+---
+
+## 🔗 Search Filters – `inurl`
+
+| Filter | Description | Example |
+|--------|-------------|---------|
+| `inurl` | F5 BigIP login | `inurl:/tmui/login.jsp` |
+| `inurl` | Pages with "login" in the URL | `inurl:login` |
+| `inurl` | Services on port 8443 | `inurl:8443 -intext:8443` |
+
+---
+
+## 🧾 Search Filters – `intext`
+
+| Filter | Description | Example |
+|--------|-------------|---------|
+| `intext` | Open directories | `intext:"index of" "parent directory"` |
+| `intext` | Password mentions | `intext:password` |
+
+---
+
+## 🧰 Search Filters – Other Operators
+
+| Filter | Description | Example |
+|--------|-------------|---------|
+| `filetype` | File extension search | `filetype:pdf` |
+| `intext` | Email domain match | `intext:"@domainname.com"` |
+| `related` | Find related pages to a URL | `related:www.bbc.co.uk` |
+| — | XLS files with "email" in URL | `filetype:xls inurl:"email.xls"` |
+| `map` | Forces Google Maps location | `map:london` |
+| `stock` | Stock-related info | `stock:goog` |
+| — | Wildcard match on email | `fred.smith*.com` |
+| `ip` | IP-based search | `ip:8.8.8.8` |
+
+---
+
+## 📢 Disclaimer
+
+This cheatsheet is for **educational and authorised security testing only**. Always get proper permission before using these queries in a real-world context.
+
+---
+
+## 💬 Contributions
+
+Spotted an issue or want to add more queries? Submit a Pull Request or open an Issue. Let’s keep this list evolving.
+

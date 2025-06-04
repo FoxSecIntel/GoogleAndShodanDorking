@@ -1,58 +1,55 @@
-# 🕵️‍♂️ Google & Shodan Dorking Repository
+# 🕵️‍♂️ Google & Shodan Dorking Toolkit
 
-Welcome to the ultimate collection of **curated Google and Shodan dorks** for threat hunting, recon, OSINT, and red teaming.
-
-> ⚠️ Use responsibly. For educational and professional research purposes only.
+A curated, SOC-ready list of Google and Shodan dorks — built for Tier 1 analysts to triage, enrich, and pivot on real-world alerts and incidents.
 
 ---
 
-## 📂 Access the Dork List
+## 📁 What's Inside
 
-👉 [Click here to view the full dork list](./dorks.md)
-
----
-
-## 🔍 Categories in the List
-
-### Google Dorks
-- Site indexing
-- Filetype leaks
-- Login portals
-- Exposed databases
-- Public webcams
-
-### Shodan Dorks
-- Vulnerable IoT
-- Unprotected APIs
-- Open ports (3389, 9200, etc.)
-- Industrial systems
-- ICS/SCADA systems
+| Folder | Description |
+|--------|-------------|
+| `dorks/` | Curated lists of Google and Shodan dorks |
+| `tools/` | Python scripts to automate dork lookups |
+| `examples/` | Screenshots and real-world use cases |
 
 ---
 
-## 🧰 Related Tools by FoxSecIntel
+## 🧠 Use Cases
 
-- [dmarc.exe](https://github.com/FoxSecIntel/dmarc.exe) — Check and analyse DMARC records
-- [ASN-Analysis](https://github.com/FoxSecIntel/ASN-Analysis) — BGP/ASN mapping for threat intel
-- [BGP-Intel](https://github.com/FoxSecIntel/BGP-Intel) — Border Gateway Protocol data scraping
-- [SPF/DMARC Bash Tools](https://github.com/FoxSecIntel/...) — CLI utilities for email infrastructure
-
----
-
-## ⭐ Why Star This Repo?
-
-- Stay up to date with real-world recon queries
-- Support open-source threat intelligence
-- Help promote good cyber hygiene
-
-[→ Star the repo](https://github.com/FoxSecIntel/GoogleAndShodanDorking/stargazers)
+- Quickly find exposed login panels
+- Locate attacker infrastructure
+- Investigate suspicious domains or IPs
+- Identify misconfigurations or leaked documents
 
 ---
 
-## 👋 Contact & Collaboration
+## 🚀 Get Started
 
-Have a dork to suggest? Found a broken query? Open an issue or reach out via GitHub.
+View:
+- [Google Dorks](dorks/google_dorks.md)
+- [Shodan Dorks](dorks/shodan_dorks.md)
+- [Use Case Templates](dorks/use_case_templates.md)
 
 ---
 
-### 🔗 Fork. Use. Improve. Share.
+## 🧪 Tier 1 SOC Analyst Focus
+
+This repo is designed to answer:
+> "How do I find more about this IP/domain/alert with public OSINT tooling?"
+
+Each dork is annotated, tested, and linked to relevant ATT&CK techniques where possible.
+
+---
+
+## 🛠️ Contribution
+
+Open a PR or issue with:
+- New dorks
+- Use case walkthroughs
+- Enrichment scripts
+
+---
+
+## 📄 License
+
+MIT — use freely, contribute back.

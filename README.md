@@ -1,6 +1,6 @@
 # 🕵️‍♂️ Google & Shodan Dorking Toolkit
 
-A curated, SOC-ready list of Google and Shodan dorks — built for Tier 1 analysts to triage, enrich, and pivot on real-world alerts and incidents.
+A curated, SOC-ready list of Google and Shodan dorks ; built for Tier 1 analysts to triage, enrich, and pivot on real-world alerts and incidents.
 
 ---
 

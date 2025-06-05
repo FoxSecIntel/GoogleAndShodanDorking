@@ -15,6 +15,7 @@ Collection of Google dorks organised by use case.
 | `site` | Documents on OneDrive | `site:onedrive.live.com` |
 | `site` | Government data pages | `site:gov inurl:data` |
 | `site` | Admin pages on a specific site | `site:example.com inurl:admin` |
+| `site` | Email exposure check | `site:pastebin.com "yourcompany.com" OR "@yourcompany.com"` |
 
 ---
 

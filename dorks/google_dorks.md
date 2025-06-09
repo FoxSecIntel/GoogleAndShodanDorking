@@ -53,7 +53,7 @@ Collection of Google dorks organised by use case.
 
 | Filter | Description | Example |
 |--------|-------------|---------|
-| `filetype` | File extension search | `filetype:pdf` |
+| `filetype` | Targets stray cryptographic key files in public dirs | `filetype:key "PRIVATE KEY-----"` |
 | `intext` | Email domain match | `intext:"@domainname.com"` |
 | `related` | Find related pages to a URL | `related:www.bbc.co.uk` |
 | — | XLS files with "email" in URL | `filetype:xls inurl:"email.xls"` |

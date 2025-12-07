@@ -22,6 +22,7 @@
 | Pulse Secure VPN               | `product:"Pulse Secure"`                                  | Finds Pulse VPN endpoints               |
 | Bomgar Remote Support          | `"Server: Bomgar" "200 OK"`                               | Detects exposed Bomgar remote support   |
 | MOVEit SSH Banner              | `"SSH-2.0-MOVEit"`                                        | Finds MOVEit file transfer SSH ports    |
+| next.js                        | ¨"X-Powered-By: Next.js""                                 | Finds web apps running next.js          |
 | SAP NetWeaver Portal           | `html:"SAP NetWeaver"`                                    | Detects exposed SAP systems             |
 | Unencrypted Services           | `not ssl`                                                 | Finds services that don’t use TLS       |
 | Windows RDP Fingerprint        | `"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00"`             | Identifies RDP protocol exposure        |

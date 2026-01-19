@@ -28,4 +28,7 @@
 | Windows RDP Fingerprint        | `"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00"`             | Identifies RDP protocol exposure        |
 | Elasticsearch | `product:"Elasticsearch"` | Often exposed without auth |
 | Open RDP | `port:3389` | RDP service exposure |
+| Running n8n servers | `http.favicon.hash:-831756631` | Detects n8n web server running on any port |
+
+
 

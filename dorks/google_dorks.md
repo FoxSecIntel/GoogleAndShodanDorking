@@ -3,6 +3,20 @@ Collection of Google dorks organised by use case.
 
 ---
 
+## 🤖 AI & LLM Infrastructure (2026 Additions)
+
+| Filter | Description | Example |
+| :--- | :--- | :--- |
+| `intitle` | Exposed **OpenClaw** / Moltbot dashboards | `intitle:"OpenClaw Control" -github.com` |
+| `inurl` | Exposed **Ollama** API instances (Port 11434) | `inurl:11434 "Ollama is running"` |
+| `intitle` | **Flowise AI** (Drag-and-drop LLM flows) | `intitle:"Flowise" inurl:8080` |
+| `intext` | Leakage of **OpenAI API keys** in env files | `filetype:env "OPENAI_API_KEY=sk-"` |
+| `filetype` | Exposed **Hugging Face** tokens in logs | `filetype:log "hf_" "HuggingFace"` |
+| `inurl` | **ChromaDB** / Vector DB exposure (RAG data) | `inurl:8000 "ChromaDB"` |
+| `intitle` | **Jupyter Notebooks** containing AI scripts | `intitle:"Jupyter Notebook" "import openai"` |
+| `site` | **LangChain / LangSmith** trace/debug logs | `site:smith.langchain.com/public/` |
+| `intext` | Exposed **Weights & Biases** dashboards | `intext:"Weights & Biases" "Project"` |
+
 ## 🌍 Search Filters – `site`
 
 | Filter | Description | Example |

@@ -35,3 +35,14 @@
 | **SAP NetWeaver Portal** | `html:"SAP NetWeaver"` | Detects exposed SAP systems |
 | **Unencrypted Services** | `not ssl` | Finds services that don’t use TLS |
 | **Windows RDP Fingerprint** | `"\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00"` | Identifies RDP protocol exposure |
+
+## AI & Agentic Systems
+| Use Case | Shodan Query | Description |
+| :--- | :--- | :--- |
+| OpenClaw Control | `http.title:"OpenClaw Control"` | Finds OpenClaw personal AI gateway instances |
+| OpenClaw (Favicon) | `http.favicon.hash:-800551065` | Direct fingerprint for OpenClaw/Moltbot nodes |
+| Ollama API | `port:11434 "Ollama is running"` | Finds exposed Ollama local LLM servers |
+| Flowise AI | `http.title:"Flowise"` | Detects Flowise UI for LLM apps |
+| ChromaDB | `port:8000 "ChromaDB"` | Finds exposed Vector Databases (RAG Memory) |
+| vLLM Serving | `port:8000 "vllm"` | Detects vLLM AI serving instances |
+| Jupyter Notebook | `http.title:"Jupyter Notebook"` | Often cont

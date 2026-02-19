@@ -63,10 +63,13 @@ def check_duplicates(path: Path) -> list[str]:
         if any(c.lower() in {"filter", "use case", "shodan query", "example", "description"} for c in cols):
             continue
 
-        # Prefer likely query column names by index conventions in this repo
-        # google table: Filter | Description | Example
-        # shodan table: Use Case | Shodan Query | Description
-        key = cols[1] if path.name == "shodan_dorks.md" else cols[-1]
+        # Prefer likely query column positions by file format in this repo
+        # google analyst table: Priority | Use Case | Google Query | Why | Risk | ATT&CK
+        # shodan analyst table: Priority | Use Case | Shodan Query | Why | Risk | ATT&CK
+        if path.name in {"google_dorks.md", "shodan_dorks.md"} and len(cols) >= 3:
+            key = cols[2]
+        else:
+            key = cols[-1]
         key = key.strip("`").strip()
         if not key:
             continue

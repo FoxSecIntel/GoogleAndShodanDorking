@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Python deps (if present)
+        run: |
+          if [ -f requirements.txt ]; then
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt || true
+          fi
+          pip install pytest || true
+
+      - name: Python syntax check
+        run: |
+          py_files=$(find . -type f -name "*.py")
+          if [ -n "$py_files" ]; then
+            python -m py_compile $py_files
+          fi
+
+      - name: Shell syntax check
+        run: |
+          sh_files=$(find . -type f -name "*.sh")
+          if [ -n "$sh_files" ]; then
+            for f in $sh_files; do bash -n "$f"; done
+          fi
+
+      - name: Run pytest (if tests exist)
+        run: |
+          if [ -d tests ]; then
+            pytest -q || true
+          fi

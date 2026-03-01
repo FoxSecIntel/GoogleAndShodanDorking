@@ -86,3 +86,12 @@ Open a PR or issue with:
 ## 📄 License
 
 MIT — use freely, contribute back.
+
+## Quick Demo
+
+```bash
+# 1) Run a core check
+# 2) Request JSON output
+# 3) Pipe into jq for analyst workflows
+```
+

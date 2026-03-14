@@ -68,6 +68,26 @@ Designed for real SOC workflows: clear priorities, fast pivots, and practical tr
 
 ---
 
+## 🆕 2026 Additions: Internet-Edge & Admin Surface Coverage
+
+| Priority | Use Case | Shodan Query | Why it matters | Risk | ATT&CK |
+| :---: | :--- | :--- | :--- | :---: | :--- |
+| P1 | MOVEit Transfer exposure | `http.title:"Moveit Transfer" port:443` | High-interest file transfer surface with patch urgency history | High | T1190 |
+| P1 | Palo Alto GlobalProtect portal fingerprint | `ssl:"Palo Alto Networks" "GlobalProtect Portal"` | Improves VPN edge visibility for auth hardening and exploit watch | High | T1133 |
+| P1 | Fortinet remote login exposure | `http.html:"/remote/login" "FortiGate"` | Maps externally reachable FortiGate auth portals | High | T1133 |
+| P1 | Ivanti Connect Secure portals | `http.title:"Ivanti Connect Secure"` | Identifies exposed Ivanti remote access interfaces | High | T1133 |
+| P1 | SonicWall Virtual Office portals | `http.title:"SonicWall" "Virtual Office"` | Finds exposed SonicWall remote access surfaces | High | T1133 |
+| P1 | Citrix Gateway TLS web exposure | `http.title:"Citrix Gateway" port:443` | Flags common enterprise edge gateway targets | High | T1133 |
+| P2 | TeamCity exposure | `product:"JetBrains TeamCity" port:8111` | CI control plane exposure can lead to software supply-chain abuse | High | T1190 |
+| P2 | Jenkins alternate fingerprint | `http.title:"Jenkins" x-jenkins` | Adds resilient Jenkins detection path | High | T1190 |
+| P2 | phpMyAdmin panels | `http.title:"phpMyAdmin" port:443` | Database admin panel exposure often leads to credential abuse | High | T1078 |
+| P2 | WordPress plugin directory listing | `http.html:"wp-content/plugins/" "Index of /"` | Reveals plugin inventory and potential vulnerable component paths | Medium | T1595 |
+| P2 | Grafana login exposure | `http.title:"Grafana" port:3000` | External dashboards may leak metrics/secrets if weakly secured | Medium | T1213 |
+| P2 | Kibana exposure | `http.title:"Kibana" port:5601` | Search/telemetry stack exposure with data leakage risk | Medium | T1213 |
+| P2 | Swagger UI internet exposure | `http.html:"swagger-ui" port:443` | API exploration endpoint may reveal sensitive routes | Medium | T1595 |
+| P2 | Exposed git config artefacts | `http.html:".git/config" "Index of /"` | Potential source metadata leak and follow-on secret exposure | High | T1552 |
+| P2 | Fortinet favicon-based hunt | `http.favicon.hash:-297069493` | Fast fingerprint pivot for Fortinet-like interfaces | Medium | T1595 |
+
 ## 🔁 Pivot Recipes (Copy/Paste)
 
 ### If alert starts with an IP

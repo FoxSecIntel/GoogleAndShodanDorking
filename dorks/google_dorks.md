@@ -72,6 +72,26 @@ Designed for real SOC workflows: clear priorities, fast pivots, and practical tr
 
 ---
 
+## 🆕 2026 Additions: Internet-Edge & Web Exposure Discovery
+
+| Priority | Use Case | Google Query | Why it matters | Risk | ATT&CK |
+| :---: | :--- | :--- | :--- | :---: | :--- |
+| P1 | FortiGate remote login | `inurl:/remote/login intitle:"FortiGate"` | Finds exposed Fortinet edge auth pages | High | T1133 |
+| P1 | Ivanti Connect Secure portals | `intitle:"Ivanti Connect Secure"` | Tracks exposed Ivanti remote access interfaces | High | T1133 |
+| P1 | SonicWall Virtual Office | `intitle:"SonicWall - Virtual Office"` | Maps SonicWall remote access surfaces | High | T1133 |
+| P1 | Citrix Gateway portals | `intitle:"Citrix Gateway"` | Common enterprise edge target discovery | High | T1133 |
+| P1 | MOVEit Transfer interfaces | `intitle:"Moveit Transfer"` | High-value managed transfer infrastructure mapping | High | T1190 |
+| P2 | Jenkins login surfaces | `intitle:"Jenkins" inurl:/login` | CI/CD exposure for software supply-chain risk | High | T1190 |
+| P2 | TeamCity login surfaces | `intitle:"TeamCity" inurl:/login.html` | Exposed build orchestration interfaces | High | T1190 |
+| P2 | Grafana login panels | `intitle:"Grafana" inurl:/login` | External observability dashboards and secret leakage risk | Medium | T1213 |
+| P2 | Kibana app exposure | `intitle:"Kibana" inurl:/app/` | Potential telemetry or index exposure | Medium | T1213 |
+| P2 | Swagger explorer pages | `inurl:swagger-ui.html intext:"Explore"` | Enumerates public API exploration portals | Medium | T1595 |
+| P2 | Spring actuator exposure | `inurl:actuator/health` | Identifies potentially exposed service health endpoints | Medium | T1595 |
+| P2 | Git directory listing | `intitle:"Index of /.git"` | Source and configuration artefact exposure path | High | T1552 |
+| P2 | Backup file listing | `intitle:"Index of /backup" (sql|zip|tar|7z)` | Finds exposed backup archives | High | T1565 |
+| P2 | Public credential breadcrumb hunting | `site:github.com "pastebin" "api_key"` | Threat intel style detection of leaked key references | Medium | T1589 |
+| P2 | WordPress plugin index exposure | `inurl:/wp-content/plugins/ "Index of"` | Reveals plugin inventory and attack surface hints | Medium | T1595 |
+
 ## 🔁 Pivot Recipes (Copy/Paste)
 
 ### If alert starts with an IP

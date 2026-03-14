@@ -43,3 +43,12 @@ jobs:
           if [ -d tests ]; then
             pytest -q || true
           fi
+
+      - name: Repository hygiene check
+        run: |
+          bad=$(git ls-files | grep -E '(^|/)__pycache__/|\.pyc$|\.pyo$|\.DS_Store$|(^|/)\.venv/' || true)
+          if [ -n "$bad" ]; then
+            echo "Tracked junk files found:"
+            echo "$bad"
+            exit 1
+          fi

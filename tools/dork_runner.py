@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+import sys
+if len(sys.argv) > 1 and sys.argv[1] in ("-a", "--author"):
+    print("Author: FoxSecIntel")
+    print("Repository: https://github.com/FoxSecIntel/GoogleAndShodanDorking
+    print("Tool: dork_runner.py")
+    raise SystemExit(0)
+
 """Simple CLI to search and export curated Google/Shodan dorks from markdown tables."""
 
 from __future__ import annotations
